@@ -13,4 +13,4 @@ A Vagrant VM compatible for Symfony 3+.
 
 ### Things to note
 * Symfony is set (via nginx) in development mode with debug set to true.
-* For macOs users having problems deleting files from the guest directory `/var/www/symfony`, just run `ls -lR` on the host's source directory. Should also be the case when `composer update` fails with directories not delete.
+* For macOS users having problems deleting files from the guest directory `/var/www/symfony`, just run `ls -lR` on the host's source directory. Should also do the same when `composer update` fails with directories not deleting.
