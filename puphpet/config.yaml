@@ -245,6 +245,7 @@ php:
             - xml
             - curl
             - mcrypt
+            - zip
         pear: {  }
         pecl: {  }
     ini:

@@ -150,7 +150,8 @@ machines.each do |i, machine|
           if Vagrant.has_plugin?('vagrant-bindfs')
             machine_id.vm.synced_folder "#{folder['source']}", "/mnt/vagrant-#{i}",
               id: "#{i}",
-              type: 'nfs'
+              type: 'nfs',
+              :nfs => { :mount_options => ["dmode=775","fmode=775"] }
             machine_id.bindfs.bind_folder "/mnt/vagrant-#{i}", "#{folder['target']}",
               after: :provision,
               force_user: sync_owner,
