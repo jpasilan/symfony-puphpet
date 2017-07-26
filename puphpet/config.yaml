@@ -259,7 +259,7 @@ php:
                 prefix: www
                 listen: '127.0.0.1:9000'
                 security.limit_extensions: .php
-                user: www-user
+                user: vagrant
                 group: www-data
     composer: '1'
     composer_home: ''
