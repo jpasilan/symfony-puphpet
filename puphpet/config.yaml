@@ -239,10 +239,18 @@ php:
     modules:
         php:
             - cli
-            - intl
-            - xml
+            - ctype
             - curl
+            - dom
+            - iconv
+            - intl
+            - mbstring
             - mcrypt
+            - pdo
+            - pgsql
+            - simplexml
+            - tokenizer
+            - xml
             - zip
         pear: {  }
         pecl: {  }
